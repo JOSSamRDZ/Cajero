@@ -25,6 +25,20 @@ if card_account == card_verification:
                 else:
                     print("No hay fondos suficientes")
                     break
+            elif user_select=="TRANSFERENCIA":
+                print("Transferencia")
+                break
+           
+            elif user_select=="CONSULTA":
+                print("CONSULTA")
+                break
+            elif user_select=="DEPOSITO":
+                print("DEPOSITO")
+                break
+            else:
+                print("Por favor eliga una opcion correcta")
+                break
+                
                          
         else:
             intentos_nip += 1
