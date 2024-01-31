@@ -27,7 +27,7 @@ if card_account == card_verification:
             if intentos_nip < 3:
                print(f"Nip incorrecto intento restantes: {3 - intentos_nip}")
             else:
-                print("Excedió el número de intentos. La cuenta fue bloqueada.")
+                print("Excedió el número de intentos. La cuenta fue bloqueada. consulte a un ejecutivo para mas información")
                 break
 else:
     print("Lo siento Cuenta incorrecta")
