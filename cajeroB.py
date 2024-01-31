@@ -14,6 +14,7 @@ if card_account == card_verification:
             fondos = 14000
              # Módulo 3 (Seleccion de servicio contiene el submodilo 3.1, 3.2, 3.3 y 3.4)
             user_select=input("RETIRO\nTRANSFERENCIA\nCONSULTA\nDEPOSITO\nEscribe una opcion: ")
+            #submodulo 3.1 (Retiro de efectivo)
             if user_select == "RETIRO":
                 retiro_user=int(input("Ingresa la catindad que desea retirar: "))
                 if retiro_user <= fondos:
