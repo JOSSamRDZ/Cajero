@@ -35,9 +35,7 @@ if card_account == card_verification:
                     print("ATM servicios le desea un excelente día")
                     break
                 else:
-                    print("Lo siento fondos insuficientes")
-                    
-
+                    print("Lo siento fondos insuficientes")                  
             elif user_select=="CONSULTA":
                 print("CONSULTA")
                 break
@@ -46,9 +44,7 @@ if card_account == card_verification:
                 break
             else:
                 print("Por favor eliga una opcion correcta")
-                break
-                
-                         
+                break                                   
         else:
             intentos_nip += 1
             if intentos_nip < 3:
@@ -58,12 +54,4 @@ if card_account == card_verification:
                 break
 else:
     print("Lo siento Cuenta incorrecta")
-    # retiro = float(input("Ingrese la cantidad que desea retirar: "))
- # if retiro <= fondos:  # Modificado para incluir el caso de retiro igual a los fondos
-            #     fondos = fondos - retiro
-            #     print(f"Retiro: {retiro} MX \n Saldo anterior: {fondos + retiro}\n Saldo actual: {fondos}")
-            #     print("Operación exitosa, ATM servicios le desea un excelente día")
-            #     break
-            # else:
-            #     print("No hay fondos suficientes.")
-            #     break
+  
