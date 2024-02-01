@@ -25,10 +25,19 @@ if card_account == card_verification:
                 else:
                     print("No hay fondos suficientes")
                     break
+            #Sub modulo 3.2 (Transferencia de efectivo)
             elif user_select=="TRANSFERENCIA":
-                print("Transferencia")
-                break
-           
+                user_trnasfer=int(input("ingresa la cantidad que desea transferir: "))
+                client_transfer=0
+                if user_trnasfer < fondos:
+                    client_transfer=user_trnasfer
+                    print(f"su transferencia de {user_trnasfer} MXN se realizo con exito\nSu Saldo acual {fondos-user_trnasfer}")
+                    print("ATM servicios le desea un excelente día")
+                    break
+                else:
+                    print("Lo siento fondos insuficientes")
+                    
+
             elif user_select=="CONSULTA":
                 print("CONSULTA")
                 break
