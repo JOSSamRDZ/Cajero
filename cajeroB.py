@@ -23,7 +23,7 @@ if card_account == card_verification:
                     print("Operación exitosa, ATM servicios le desea un excelente día")
                     break
                 else:
-                    print("No hay fondos suficientes")
+                    print("no hay fondos suficientes")
                     break
                          
         else:
