@@ -1,6 +1,8 @@
 print("Bienvenido a ATM Services")
 card_verification = 8989
 
+anotherUser=0
+
 # Módulo 1 (Verificación de cuenta e ingreso de NIP)
 card_account = int(input("Ingrese Tarjeta: "))
 if card_account == card_verification:
@@ -25,6 +27,17 @@ if card_account == card_verification:
                 else:
                     print("no hay fondos suficientes")
                     break
+            if user_select == "TRANSFERENCIA":
+                transfer_user= int(input("Cuanto deseas transferir: "))
+
+                if transfer_user < fondos:
+                    fondos-=  transfer_user
+                    anotherUser=fondos
+                    print(f" Transferiste: {transfer_user} fondos actuales: {fondos} ")
+                    break
+                else:
+                    print ("No hay fondo suficientes para trasnferir")
+            
                          
         else:
             intentos_nip += 1
